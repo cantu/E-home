@@ -44,11 +44,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.html">Overview</a></li>
-            <li ><a href="./data.html">Data</a></li>
-            <li><a href="./smart.html">Smart</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li class="active"><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.php">Overview</a></li>
+            <li ><a href="./data.php">Data</a></li>
+            <li><a href="./smart.php">Smart</a></li>
+            <li><a href="./about.php">About</a></li>
+            <li class="active"><a href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

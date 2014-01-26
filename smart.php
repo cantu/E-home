@@ -44,11 +44,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.html">Overview</a></li>
-            <li><a href="./data.html">Data</a></li>
-            <li><a href="./smart.html">Smart</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.php">Overview</a></li>
+            <li><a href="./data.php">Data</a></li>
+            <li class="active"><a href="./smart.php">Smart</a></li>
+            <li><a href="./about.php">About</a></li>
+            <li><a href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,41 +56,12 @@
 
     <div class="container " >
 
-
 	<div class="page-header">
-		<h1>Introduction</h1>
-	</div>
-		<p>Do you want to see who is in your home, when you a outdoor?</p>
-		<p>Do you want to switch on conditioner before you get home? </br>
-		<p>...</p>
-		<p>This project meet the requirment, you can control your home or monitor the home at anytime and anywhere. Futhermore, it's so smart that you do not neet tell how to do, this smarted angle has done somethings before you remind.</p>
-		<p>ok, Let's go!</p>
+        <h3>Need to to do</h3>
+    </div>
 
-	<!-- head 2, project plan -->
-	<div class="page-header">
-		<h1> Project Plan </h1>
-	</div>
-	<p>	Ehome is based on a micro control borad Arduino, which is open source hardware.</p>
-	<p> there are some nodes lunched at home's several room </p>
-	<p> Every node collect data from sensor to server </p>
-	
-	<div class="img-responsive">
-		<img style="width: 70%; hight: auto;" src="./resource/image/EhomeHardwarePlan.png" >
-	</div>
-
-	<!-- head3, project progress -->
-	<div class="page-header">
-		<h1>Project progress </h1>
-	</div>
-	<div class="progress">
-        <div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" 
-			aria-valuenow="40" role="progressbar" class="progress-bar">
-		<span class="sr-only">40% Complete</span></div>
-    </div>	
-	
-
-
-
+    <p> 用语义合成技术播放声音</p>
+    <p> 动态实施现实数据</p>
 
 	<hr>
 	<footer>
@@ -108,7 +79,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="./theme/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

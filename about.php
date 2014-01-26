@@ -44,11 +44,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.html">Overview</a></li>
-            <li class="active"><a href="./data.html">Data</a></li>
-            <li><a href="./smart.html">Smart</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.php">Overview</a></li>
+            <li ><a href="./data.php">Data</a></li>
+            <li><a href="./smart.php">Smart</a></li>
+            <li class="active"><a href="./about.php">About</a></li>
+            <li><a href="./contact.php">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -57,67 +57,14 @@
     <div class="container " >
 
 
-	<!--- some panel show current data -->
-	<div class="row">
-		<div class="col-sm-4" >
-			<div class="panel panel-danger">
-				<div class="panel-heading">
-					<h3 class="panel-title">Tempreture:<h3>
-				</div>
-				<div class="panel-body">
-					30c
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4" >
-			<div class="panel panel-success">
-				<div class="panel-heading">
-					<h3 class="panel-title">Humdity:<h3>
-				</div>
-				<div class="panel-body">
-					30%
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4" >
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h3 class="panel-title">Server Load<h3>
-				</div>
-				<div class="panel-body">
-					11%
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--- highcharts plugin to draw data picture -->
 	<div class="page-header">
-		<h2>data chart</h2>
+		<h3>Need to to do</h3>
 	</div>
 
-	<!-- debug database's data -->
-	<div class="page-header">
-		<h2>DataBase quire</h2>
-	</div>
-	<div >
-		<form class="form-inline" role="form">
-			<div class="form-group">
-				<lable class="sr-only" for="abab">Start ID</lable>
-				<input type="text" class="form-control" id="start_id" placeholder="Start ID">
-			</div>
-			<div class="form-group">
-				<lable class="sr-only" for="haha">Number to require</lable>
-				<input type="text" class="form-control" id="num" placeholder="Number to require">
-			</div>
-			<botton type="submit" class="btn  btn-primary">Require</botton>
-		</form>
-
-	</div>
+	<p> 用语义合成技术播放声音</p>
+	<p> 动态实施现实数据</p>
 
 
-
-	<!--- page  botton show info -->
 	<hr>
 	<footer>
 		<p>Design by tusion, follow my sina weibo 
@@ -134,7 +81,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="./theme/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
