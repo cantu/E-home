@@ -65,6 +65,7 @@
 					<h3 class="panel-title">Time:<h3>
 				</div>
 				<div class="panel-body">
+					<!-- AJAX DOM requtest here !!! -->
 					<p id="time">--</p>
 				</div>
 			</div>
@@ -75,6 +76,7 @@
 					<h3 class="panel-title">Tempreture:<h3>
 				</div>
 				<div class="panel-body">
+					<!-- AJAX DOM requtest here !!! -->
 					<p id="temperature">NA </p>
 				</div>
 			</div>
@@ -85,6 +87,7 @@
 					<h3 class="panel-title">Humdity:<h3>
 				</div>
 				<div class="panel-body">
+					<!-- AJAX DOM requtest here !!! -->
 					<p id="humdity">NA</p>
 				</div>
 			</div>
@@ -95,6 +98,7 @@
 					<h3 class="panel-title">Server Load<h3>
 				</div>
 				<div class="panel-body">
+					<!-- AJAX DOM requtest here !!! -->
 					<p id="server_load"> NA</p>
 				</div>
 			</div>
@@ -102,8 +106,11 @@
 	</div>
 
 	<!--- highcharts plugin to draw data picture -->
-	<div class="page-header">
-		<h2>data chart</h2>
+	<div class="page-header" >
+		<h2>Data Chart</h2>
+		<div id="HighChart">
+		<!-- this section call highchart pligin to draw data chart -->
+		</div>
 	</div>
 
 	<!-- debug database's data -->
@@ -111,7 +118,7 @@
 		<h2>DataBase quire</h2>
 	</div>
 	<div >
-		<form class="form-inline" role="form" action="">
+		<form class="form-inline" role="form" action="" method="get">
 			<div class="form-group">
 				<lable class="sr-only" for="abab">Start ID</lable>
 				<input type="text" class="form-control" name="start_id" placeholder="Start ID">
@@ -120,7 +127,7 @@
 				<lable class="sr-only" for="haha">Number to require</lable>
 				<input type="text" class="form-control" name="num" placeholder="Number to require">
 			</div>
-			<button type="submit"  id="submit" name="submit" value="requireDB" class="btn  btn-primary">			Require Database</button>
+			<button type="submit"   name="submit" value="requireDB" class="btn  btn-primary"> Require Database</button>
 		</form>
 
 	</div>
@@ -202,11 +209,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./resource/js/showdata.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="./theme/hightcharts/highcharts.js"></script>
 	<script src="./theme/hightcharts/modules/exporting.js"></script>
-	<script src="./theme/hightcharts/themes/gray.js"></script>
-	<script src="./resource/js/showdata.js"></script>
+	<script src="./resource/js/DrawLine.js" ></script>
+
   </body>
 </html>
 
