@@ -1,0 +1,1 @@
+$('#time").css("color","red");

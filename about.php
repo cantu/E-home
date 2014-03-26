@@ -40,12 +40,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html">Tusion E-home</a>
+          <a class="navbar-brand" href="./data.php">Tusion E-home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.php">Overview</a></li>
             <li ><a href="./data.php">Data</a></li>
+            <li><a href="./voerview.php">Overview</a></li>
             <li><a href="./smart.php">Smart</a></li>
             <li class="active"><a href="./about.php">About</a></li>
             <li><a href="./contact.php">Contact</a></li>

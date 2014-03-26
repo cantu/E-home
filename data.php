@@ -27,7 +27,8 @@
     <![endif]-->
   </head>
 
-  <body onLoad="display_data()">
+  <!-- <body onLoad="display_data()"> -->
+  <body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -40,12 +41,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html">Tusion E-home</a>
+          <a class="navbar-brand" href="./data.php">Tusion E-home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.php">Overview</a></li>
             <li class="active"><a href="./data.php">Data</a></li>
+            <li><a href="./overview.php">Overview</a></li>
             <li><a href="./smart.php">Smart</a></li>
             <li><a href="./about.php">About</a></li>
             <li><a href="./contact.php">Contact</a></li>
@@ -92,17 +93,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-4" >
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h3 class="panel-title">Server Load<h3>
-				</div>
-				<div class="panel-body">
-					<!-- AJAX DOM requtest here !!! -->
-					<p id="server_load"> NA</p>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<!--- highcharts plugin to draw data picture -->
@@ -120,14 +110,15 @@
 	<div >
 		<form class="form-inline" role="form" action="" method="get">
 			<div class="form-group">
-				<lable class="sr-only" for="abab">Start ID</lable>
-				<input type="text" class="form-control" name="start_id" placeholder="Start ID">
+				<label class="sr-only" for="start_id">Start ID</label>
+				<input type="text" class="form-control" name="start_id" id="start_id" placeholder="Start ID"/>
 			</div>
 			<div class="form-group">
-				<lable class="sr-only" for="haha">Number to require</lable>
-				<input type="text" class="form-control" name="num" placeholder="Number to require">
+				<label class="sr-only" for="num">Number to require</label>
+				<input type="text" class="form-control" name="num" id="num"  placeholder="Number to require"/>
 			</div>
-			<button type="submit"   name="submit" value="requireDB" class="btn  btn-primary"> Require Database</button>
+			<button type="submit"   name="submit" value="requireDB" class="btn  btn-primary"> Require Database
+			</button>
 		</form>
 
 	</div>

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tusion E-home</title>
+    <title>彩票投票</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./theme/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -29,67 +29,14 @@
 
   <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.php">Tusion E-home</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php">Overview</a></li>
-            <li><a href="./data.php">Data</a></li>
-            <li><a href="./smart.php">Smart</a></li>
-            <li><a href="./about.php">About</a></li>
-            <li><a href="./contact.php">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
     <div class="container " >
 
-
-	<div class="page-header">
-		<h1>Introduction</h1>
-	</div>
-		<p>Do you want to see who is in your home, when you a outdoor?</p>
-		<p>Do you want to switch on conditioner before you get home? </br>
-		<p>...</p>
-		<p>This project meet the requirment, you can control your home or monitor the home at anytime and anywhere. Futhermore, it's so smart that you do not neet tell how to do, this smarted angle has done somethings before you remind.</p>
-		<p>ok, Let's go!</p>
-
-	<!-- head 2, project plan -->
-	<div class="page-header">
-		<h1> Project Plan </h1>
-	</div>
-	<p>	Ehome is based on a micro control borad Arduino, which is open source hardware.</p>
-	<p> there are some nodes lunched at home's several room </p>
-	<p> Every node collect data from sensor to server </p>
 	
-	<div class="img-responsive">
-		<img style="width: 70%; hight: auto;" src="./resource/image/EhomeHardwarePlan.png" >
-	</div>
-
-	<!-- head3, project progress -->
-	<div class="page-header">
-		<h1>Project progress </h1>
-	</div>
-	<div class="progress">
-        <div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" 
-			aria-valuenow="40" role="progressbar" class="progress-bar">
-		<span class="sr-only">40% Complete</span></div>
-    </div>	
+	<h1> 你买的是希望！！！ </h1>
 	
-
-
+	<div class="vote_result"> </div>
+	<hr>
 
 
 	<hr>
@@ -108,8 +55,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="./theme/jquery.min.js"></script>
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./theme/hightcharts/highcharts.js"</script>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="./resource/js/vote_result.js"></script>
   </body>
 </html>
 

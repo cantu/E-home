@@ -28,7 +28,6 @@
   </head>
 
   <body>
-
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -40,12 +39,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html">Tusion E-home</a>
+          <a class="navbar-brand" href="./data.php">Tusion E-home</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.php">Overview</a></li>
             <li ><a href="./data.php">Data</a></li>
+            <li><a href="./overview.php">Overview</a></li>
             <li><a href="./smart.php">Smart</a></li>
             <li><a href="./about.php">About</a></li>
             <li class="active"><a href="./contact.php">Contact</a></li>
@@ -57,7 +56,25 @@
     <div class="container " >
 
 
-
+	<!-- Baidu map location api example -->
+	<br>
+	<div class="badu_location">
+	
+	<script type="text/javascript">
+	var url = "http://api.map.baidu.com/location/ip?ak=EC2c8758ac1800b663aac075e619c8dc&ip=202.198.16.3&coor=bd0911"
+	$.get( "http://api.map.baidu.com/location/ip?ak=EC2c8758ac1800b663aac075e619c8dc&ip=202.198.16.3&coor=bd0911", 
+        function(data)
+        {
+            alert("get json:" + data );
+        }
+    );
+	</script>
+	</div>
+	
+	<!--- visitor leave a message, use cookie or sessions -->
+	<div class="message_box">
+		
+	</div>
 
 	<hr>
 	<footer>
@@ -77,6 +94,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./resource/js/map.js"></script>
   </body>
 </html>
 
