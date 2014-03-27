@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tusion E-home</title>
+    <title>彩票投票</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./theme/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -29,36 +29,14 @@
 
   <body>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./index.php">Tusion E-home</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="./data.php">Data</a></li>
-            <li><a href="./overview.php">Overview</a></li>
-            <li><a href="./smart.php">Smart</a></li>
-            <li><a href="./about.php">About</a></li>
-            <li><a href="./contact.php">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
     <div class="container " >
 
 	
-	<h1> Login in </h1>
-
+	<h1> 你买的是希望！！！ </h1>
+	
+	<div class="vote_result"> </div>
+	<hr>
 
 
 	<hr>
@@ -77,8 +55,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="./theme/jquery.min.js"></script>
   	<script src="./theme/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./theme/hightcharts/highcharts.js"</script>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="./resource/js/vote_result.js"></script>
   </body>
 </html>
 
