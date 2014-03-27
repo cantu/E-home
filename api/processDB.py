@@ -115,18 +115,51 @@ def processDB( cursor, db):
 	#calculate the avrage temperature data for per minute
 	print '************************************'
 	print 'calculate average temperature data of every minute'
-	time_item = result[100][1]
-	time_item = datetime.strptime( time_item, "%Y-%m-%d  %H:%M:%S" )	
+	start_flag= False
+	num_items=0
+	total_minute = 0
+	for i in range(0, row):
+		if result[i][0] in temp_error_id_list :
+			#print 'delete record',result[i]
+			continue
 
-	print type( time_item )
+		if start_flag == False:
+			start_flag = True
+			num_items += 1
+			#time string is '2013-12-30 19:51:13.252898',transform string to datatime object
+			temp_start_time = datetime.datetime.strptime( result[i][1], "%Y-%m-%d  %H:%M:%S.%f" )	
+			sum_temp1 = result[i][4]
+			sum_temp2 = result[i][5]
+			sum_temp3 = result[i][6]
+		else:
+			temp_end_time = datetime.datetime.strptime( result[i][1], "%Y-%m-%d  %H:%M:%S.%f" )	
+			num_items += 1
+			record_interval = temp_end_time - temp_start_time
+			sum_temp1 += result[i][4]
+			sum_temp2 += result[i][5]
+			sum_temp3 += result[i][6]
+			#print 'No.',i,': ', record_interval.seconds;
+			#计算两个数据之间的间隔时间，大概1分钟取一次平均值
+			if  record_interval.seconds >= 60 :
+				# or j==row ):
+				#这里的数据有可能会丢失很长一段时间，时间上不连续，需要增加判断
+				#or result[j][2] + 1 !=:
+				#print 'start record time interval has 10 minute at No.%d, num_items=%d' %(i,num_items)
+				avg_temp1 = round( sum_temp1 / num_items, 2 )
+				avg_temp2 = round( sum_temp2 / num_items, 2 )
+				avg_temp3 = round( sum_temp3 / num_items, 2 )
+				total_minute += 1
+				print '%d minute'%total_minute, ', temp:', avg_temp1, avg_temp2, avg_temp3
+				start_flag = False
+				num_items = 0
+
+
+
+
+
+
 
 if __name__=='__main__':
-	''' #use database infomation schema to caculate storage size of table
-	command_4 ="""select concat( round( sum(DATA_LENGTH/1024/1024), 2 ) , 'MB') 
-		as sensor_data from TABLES where table_schema='ds18b20_db' """
-	result = cursor.execute( command_4 )
-	print result
-	'''
 	
 	command_show_tables = "show tables"
 	command_show_datastruct = "desc sensor_data"
